@@ -1,0 +1,3 @@
+[run]
+source = payment_router
+omit = tests/*
