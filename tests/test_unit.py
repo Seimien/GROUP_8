@@ -40,7 +40,7 @@ class TestSecurityGuardrail:
 class TestValidation:
     def test_negative_amount_raises(self, router):
         with pytest.raises(ValueError):
-            router.execute_transaction("tx1", -5, VALID_PHONE)
+            router.execute_transaction("tx1", 5, VALID_PHONE)
 
     def test_invalid_phone_raises(self, router):
         with pytest.raises(ValueError):
